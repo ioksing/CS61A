@@ -7,7 +7,15 @@ def two_of_three(a, b, c):
     34
     >>> two_of_three(10, 2, 8)
     164
-    >>> two_of_three(5, 5, 5)
-    50
     """
     return a*a + b*b + c*c - min(a, b, c)*min(a,b,c)
+
+def main():
+
+    a = int(input("a : "))
+    b = int(input("b : "))
+    c = int(input("c : "))
+
+    print(two_of_three(a, b, c))
+
+main()
